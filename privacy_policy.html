@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Signature Maker (Sign PDF Documents)</title>
+  <meta name="description"
+    content="Official Privacy Policy for Signature Maker (com.cursortek.pdf_signature_maker) — 100% on-device PDF signing, stamping, and document editing." />
+  <style>
+    :root {
+      --primary: #EB1228;
+      --primary-soft: rgba(235, 18, 40, 0.08);
+      --bg: #F6F6F9;
+      --card-bg: #FFFFFF;
+      --text-main: #0D0B0C;
+      --text-muted: #5C5F66;
+      --border: #E5E7EB;
+      --badge-bg: #EEF2FF;
+      --badge-text: #1E40AF;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #FF3B4E;
+        --primary-soft: rgba(255, 59, 78, 0.14);
+        --bg: #111111;
+        --card-bg: #1C1C1E;
+        --text-main: #F3F4F6;
+        --text-muted: #9CA3AF;
+        --border: #2E2E32;
+        --badge-bg: #1E293B;
+        --badge-text: #93C5FD;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 32px 16px 64px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .header-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .meta-item strong {
+      color: var(--text-main);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85em;
+      background: var(--primary-soft);
+      color: var(--primary);
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+
+    .highlight-banner {
+      background: var(--primary-soft);
+      border-left: 4px solid var(--primary);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+    }
+
+    .highlight-banner h2 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .highlight-banner p {
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .policy-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 32px;
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 18px 0 8px;
+      color: var(--text-main);
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 16px 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+
+    th,
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--bg);
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 600px) {
+
+      .header-card,
+      .policy-card {
+        padding: 24px 20px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header-card">
+      <div class="brand-badge">Official Privacy Policy</div>
+      <h1>Signature Maker — Sign PDF Documents</h1>
+      <p>We respect your privacy and are committed to protecting your personal documents and electronic signatures.</p>
+      <div class="meta-grid">
+        <div class="meta-item"><strong>Effective Date:</strong> November 1, 2026</div>
+        <div class="meta-item"><strong>Last Updated:</strong> November 1, 2026</div>
+        <div class="meta-item"><strong>Package ID:</strong> <code>com.cursortek.pdf_signature_maker</code></div>
+      </div>
+    </header>
+
+    <div class="highlight-banner">
+      <h2>100% On-Device Document &amp; Signature Processing</h2>
+      <p>
+        <strong>Signature Maker</strong> is an offline-first, local document signing and editing application. Your PDF
+        documents, scanned camera pages, drawn signatures, stamps, dates, and text annotations are processed and stored
+        <strong>exclusively on your device</strong>. We never upload, transmit, store, or view your documents or
+        signatures on any external server.
+      </p>
+    </div>
+
+    <main class="policy-card">
+      <section>
+        <h2>1. Introduction</h2>
+        <p>
+          Welcome to <strong>Signature Maker</strong> ("we," "our," or "us"), published by CursorTek. This Privacy
+          Policy explains how our mobile application (Package ID: <code>com.cursortek.pdf_signature_maker</code>)
+          handles information when you use our application on Android or iOS devices.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information We Process</h2>
+        <h3>2.1. Documents, Signatures, and Annotations (Local Only)</h3>
+        <p>When you import PDF files, capture pages with your camera, pick images from your gallery, or draw signatures:
+        </p>
+        <ul>
+          <li><strong>Local Processing Only:</strong> All PDF rendering, text extraction/recognition, signature drawing,
+            stamp placement, and PDF file generation execute directly on your device.</li>
+          <li><strong>Local Storage:</strong> Saved signatures, downloaded custom fonts, and your saved PDF list are
+            stored inside your device's private application storage using an on-device database (<strong>Hive</strong>)
+            and local preferences (<strong>SharedPreferences</strong>).</li>
+          <li><strong>Automatic Session Cache Cleanup:</strong> Temporary page images created while editing a document
+            are stored in an isolated local cache directory (<code>active_document_cache</code>) and are automatically
+            purged when you close the editor, save the PDF, or restart the app.</li>
+          <li><strong>Zero Cloud Uploads:</strong> We never transmit your PDF files, photos, or signatures to our
+            servers or any third party.</li>
+        </ul>
+
+        <h3>2.2. Automatically Collected Technical Diagnostics</h3>
+        <p>
+          Our app uses <strong>Google Firebase Core</strong> (<code>firebase_core</code>) for foundational app
+          initialization. Depending on your device settings, Google Play Services and Firebase may process basic
+          technical device metadata (such as device model, OS version, or installation instance identifiers) strictly
+          for service reliability and security.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Device Permissions We Request and Why</h2>
+        <p>Signature Maker requests only the system permissions required to scan, import, edit, and export your PDF
+          documents:</p>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Android Permission Name</th>
+                <th>Purpose in the App</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Camera</strong></td>
+                <td><code>android.permission.CAMERA</code></td>
+                <td>Allows you to capture photos of physical paper documents inside the app to convert them into
+                  signable PDF pages. Camera images remain strictly on your device.</td>
+              </tr>
+              <tr>
+                <td><strong>Storage / Photos &amp; Files</strong></td>
+                <td><code>android.permission.WRITE_EXTERNAL_STORAGE</code> &amp; System File/Photo Picker</td>
+                <td>Allows you to import existing PDF files or gallery images into the editor, and to export or save
+                  signed PDF documents to your device storage.</td>
+              </tr>
+              <tr>
+                <td><strong>Internet &amp; Network State</strong></td>
+                <td><code>android.permission.INTERNET</code></td>
+                <td>Used solely to download optional custom typography fonts (<code>.ttf</code> files from Google Fonts)
+                  when you select a new font in the Text Editor, and to check connectivity before downloading.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>You can revoke any of these permissions at any time via your device's <strong>Settings &rarr; Apps &rarr;
+            Signature Maker &rarr; Permissions</strong>.</p>
+      </section>
+
+      <section>
+        <h2>4. Third-Party Services &amp; SDKs</h2>
+        <p>Signature Maker integrates the following third-party services:</p>
+        <ul>
+          <li>
+            <strong>Google Firebase Core:</strong> Used for core application initialization. Read Google's Privacy
+            Policy at
+            <a href="https://policies.google.com/privacy" target="_blank"
+              rel="noopener noreferrer">https://policies.google.com/privacy</a>.
+          </li>
+          <li>
+            <strong>Google Fonts:</strong> When you choose to download an optional font style in the Text Editor, the
+            app makes an HTTPS request to fetch the <code>.ttf</code> font file and caches it locally on your device for
+            offline reuse.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Data Retention and Deletion (Your Control)</h2>
+        <p>Because all of your documents and signatures are stored locally on your device, you have full control over
+          your data at all times:</p>
+        <ul>
+          <li><strong>Delete Saved PDFs:</strong> Open the <strong>Files</strong> tab inside the app to delete
+            individual PDF documents or tap <strong>Delete All</strong> to permanently erase all saved PDFs.</li>
+          <li><strong>Delete Saved Signatures:</strong> Open the <strong>Add Signature</strong> sheet in the editor to
+            remove any saved signature.</li>
+          <li><strong>Complete Removal:</strong> Uninstalling <strong>Signature Maker</strong> or clearing the app's
+            storage in your device settings immediately and permanently deletes all locally stored PDFs, signatures,
+            cached fonts, and preferences.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Data Security</h2>
+        <p>
+          All document rendering and PDF generation execute within your operating system's sandboxed application
+          directory. Any external network requests (such as optional font downloads) are transmitted over encrypted
+          <strong>HTTPS</strong> connections.
+        </p>
+      </section>
+      <section>
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect new app features or regulatory requirements.
+          When we make changes, we will update the "Last Updated" date at the top of this page.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at:</p>
+        <ul>
+          <li><strong>App Name:</strong> Signature Maker (<code>com.cursortek.pdf_signature_maker</code>)</li>
+          <li><strong>Support Email:</strong> <a href="mailto:support@cursortek.com">support@cursortek.com</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 CursorTek &bull; Signature Maker (<code>com.cursortek.pdf_signature_maker</code>). All rights
+      reserved.
+    </footer>
+  </div>
+</body>
+
+</html>
